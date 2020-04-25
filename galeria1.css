@@ -1,0 +1,33 @@
+.banner{/*Nmbre de la clase*/
+ 	width: 700px;/*Ancho del banner en pixeles*/
+ 	height: 300px;/*Altura del banner en pixeles*/
+ 	border: 3px solid black;/*Borde y color*/
+ 	margin: auto;/*Margen*/
+
+ 	background-size: 100% 100%;/*Tamano y ancho total*/
+
+ 	animation:banner 5s infinite;/*Tiempo en el que cambiara la imagen y las veces que se repite, es infinito*/
+ 	animation-direction: alternate;
+
+ }
+
+ @keyframes banner{
+ 	0%, 30%{
+ 		background-image: url(imagenes1/juegos.jpg);/*imagen de fondo*/
+ 		opacity: 1;/*Opacidad*/
+ 	}
+ 	31%, 34%{/*Opacidad en porcentaje*/
+ 		opacity: 0.1%;/*Disminuye la opacidad*/
+ 	}
+ 	35%, 65% {/*Opacidad en porcentajes*/
+ 		background-image: url(imagenes1/losamigos.jpg);/*imagen de fondo*/
+ 		opacity: 1;/*Opacidad*/
+ 	}
+ 	66%, 69%;{/*Opacidad en porcentajes*/
+ 		opacity: 0.1;/*Disminuye*/
+ 	}
+
+ 	70%, 100% {/*Opacidad en porcentajes*/
+ 		background-image: url(imagenes1/peruanos.jpg);/*Imagen de fondo*/
+ 	}
+ }
